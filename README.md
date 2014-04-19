@@ -7,5 +7,5 @@ Landing Page:
     Version A: index.html
     Version B: index-b.html
 
-Boostrap framework
+Bootstrap framework
 Lumen theme from Bootswatch
