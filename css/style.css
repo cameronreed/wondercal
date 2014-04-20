@@ -3,14 +3,16 @@
 }
 
 .glyphicon-chevron-right, .glyphicon-chevron-left {
-    color: black;
+    color: #fff;
 }
 
-.carousel-control.left {
-  background-image: none;
-}
-.carousel-control.right {
-  background-image: none;
+.btn-toolbar{
+  text-align: center;
+}​
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #efefef;
 }
 
 
