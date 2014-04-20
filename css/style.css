@@ -1,12 +1,13 @@
 .brand {
     font-family: 'Pacifico';
+    font-size: 150%;
 }
 
 .glyphicon-chevron-right, .glyphicon-chevron-left {
     color: #fff;
 }
 
-.btn-toolbar{
+.btn-toolbar-center{
   text-align: center;
 }​
 
@@ -15,6 +16,29 @@
   border-color: #efefef;
 }
 
+.main-content {
+    margin-top: 50px;
+}
+
+.spacer100 {
+  height: 100px;
+}
+
+.spacer50 {
+  height: 50px;
+}
+
+.spacer10 {
+  height: 10px;
+}
+
+.text-muted {
+  color: #efefef;
+}
+
+hr {
+  border-top: 2px solid #ddd;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -31,6 +55,12 @@ footer {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  margin: 20px 0px;
   text-align: center;
+  background-color: #f8f8f8;
+  border-top: 4px solid #e7e7e7;
+}
+
+footer p {
+  margin: 15px 0;
+  color: #999;
 }
