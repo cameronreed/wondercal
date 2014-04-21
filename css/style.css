@@ -18,6 +18,11 @@
 
 .main-content {
     margin-top: 50px;
+    width: 100%;
+}
+
+.section {
+  padding: 75px 8%;
 }
 
 .spacer100 {
