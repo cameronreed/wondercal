@@ -38,7 +38,11 @@
 }
 
 .text-muted {
-  color: #efefef;
+  color: #ffffff;
+}
+
+form {
+  text-align: center;
 }
 
 hr {
