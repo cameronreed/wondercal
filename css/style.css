@@ -1,70 +1,32 @@
-.brand {
-    font-family: 'Pacifico';
-    font-size: 150%;
-}
-
-.glyphicon-chevron-right, .glyphicon-chevron-left {
-    color: #fff;
-}
-
-.btn-toolbar-center{
-  text-align: center;
-}​
-
-.navbar-default {
-  background-color: #ffffff;
-  border-color: #efefef;
-}
-
-.main-content {
-    margin-top: 50px;
-    width: 100%;
-}
-
-.section {
-  padding: 75px 8%;
-}
-
-.spacer100 {
-  height: 100px;
-}
-
-.spacer50 {
-  height: 50px;
-}
-
-.spacer10 {
-  height: 10px;
-}
-
-.avatar {
-  width: 150px;
-  height: 150px;
-  margin: 20px;
-  float: left;
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-  overflow: hidden;
-}
-
-.text-muted {
-  color: #ffffff;
-}
+/* GLOBAL STYLES
+-------------------------------------------------- */
 
 form {
   text-align: center;
+  margin: 30px 0 30px;
 }
 
 hr {
   border-top: 2px solid #ddd;
 }
 
-/* Sticky footer styles
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+
+/* STICKY FOOTER STYLES
 -------------------------------------------------- */
+
 html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
@@ -73,7 +35,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
+  height: 60px;
   text-align: center;
   background-color: #f8f8f8;
   border-top: 4px solid #e7e7e7;
@@ -82,4 +44,195 @@ footer {
 footer p {
   margin: 15px 0;
   color: #999;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #efefef;
+}
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* SECTIONS
+-------------------------------------------------- */
+
+.container {
+  width: 100%;
+}
+
+.main-content {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.section {
+  padding: 75px 8%;
+  color: #484848;
+}
+
+.section-image{
+  width: 650;
+  height: 450;
+}
+
+.section-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.btn-toolbar-center{
+  text-align: center;
+}​
+
+
+/* SECTION TEXT
+-------------------------------------------------- */
+
+.section-heading {
+  font-size: 40px;
+}
+
+.brand {
+  font-family: 'Pacifico';
+  font-size: 150%;
+}
+
+.text-muted {
+  color: #ffffff;
+  font-size: 90%;
+  font-weight: 300;
+}
+
+.lead {
+  font-size: 15pt;
+}
+
+/* CUSTOMIZE THE FORM FOR BETA SIGN UP
+-------------------------------------------------- */
+.form-group {
+  padding-bottom: 50px 0;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 550px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  position: absolute;
+  width: 35%;
+  left: 10%;
+  right: 5%;
+  top: 5%;
+  z-index: 10;
+  text-shadow: none;
+  text-align: left;
+  color: #484848;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 42%;
+  left: 48%;
+  right: 10%;
+  top: 5%;
+}
+
+.carousel-indicators {
+  bottom: 5%;
+  color: #484848;
+}
+
+.carousel-indicators li {
+  border: 1px solid #484848;
+}
+
+.carousel-indicators .active {
+  background-color: #484848;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 550px;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 550px;
+}
+.carousel-control {
+  opacity: .5;
+  width: 10%;
+}
+
+.carousel-control:hover {
+  opacity: 1;
+}
+
+.carousel-control .glyphicon {
+  text-shadow: none;
+  top: 50%;
+  color: #484848;
+}
+
+/* remove the defaul gradient */
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container-b {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .section-heading {
+    margin-top: 50px;
+  }
 }
