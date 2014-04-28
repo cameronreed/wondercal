@@ -1,0 +1,75 @@
+.brand {
+    font-family: 'Pacifico';
+    font-size: 150%;
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+    color: #fff;
+}
+
+.btn-toolbar-center{
+  text-align: center;
+}​
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #efefef;
+}
+
+.main-content {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.section {
+  padding: 75px 8%;
+}
+
+.spacer100 {
+  height: 100px;
+}
+
+.spacer50 {
+  height: 50px;
+}
+
+.spacer10 {
+  height: 10px;
+}
+
+.text-muted {
+  color: #ffffff;
+}
+
+form {
+  text-align: center;
+}
+
+hr {
+  border-top: 2px solid #ddd;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  text-align: center;
+  background-color: #f8f8f8;
+  border-top: 4px solid #e7e7e7;
+}
+
+footer p {
+  margin: 15px 0;
+  color: #999;
+}

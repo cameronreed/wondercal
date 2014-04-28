@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>WonderCal: Easy Group Scheduling</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles -->
+    <link href="{{ url_for('static', filename='css/carousel.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand brand" href="index-b.html">WonderCal</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Demo</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="faq-b.html">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide main-content" data-ride="carousel" data-interval="false">
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Carousel Slides -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="item active" style="background-color:#75caeb;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2 class="section-heading"><span class="brand">WonderCal</span><h2>
+              <span class="section-subheading">One, Two, Scheduled!</span>
+            </div>
+            <div class="carousel-image">
+              <!-- <img class="section-image img-responsive" src="img/test-img.png"> -->
+              <img class="section-image img-responsive" src="img/WonderCal-08.png" alt="Generic placeholder image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="item" style="background-color:#ff851b;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Why do you need WonderCal?</h2>
+              <p>Trying to schedule a group meeting can feel like herding cats!  You’d think everyone having a smartphone and calendar with them all the time would help, but these calendars don’t talk to each other! The result: <em>zillions of emails/texts or tedious, manual tools.</em></p>
+            </div>
+            <div class="carousel-image">
+              <img class="section-image img-responsive" src="img/WonderCal-05.png" alt="Generic placeholder image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="item" style="background-color:#28b62c;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>What does it do?</h1>
+              <p> Wondercal eliminates this painful back and forth, by learning when everyone is busy and scheduling around these times! With WonderCal, you know if people are free <em>before</em> you try and schedule the meeting.</p>
+            </div>
+            <div class="carousel-image">
+              <img class="section-image img-responsive" src="img/WonderCal-06.png" alt="Generic placeholder image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="item" style="background-color:#ff851b">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>How does it work?</h1>
+              <p>Step 1 - Tell WonderCal when and with whom  you want to meet. If they’ve never used WonderCal before, we’ll ask them to link their calendars.</p>
+              <p>Step 2 - WonderCal will use what it knows about the participants’ availability to pick the best times to meet.</p>
+              <p>Step 3 - Pick the time you like from these options, and WonderCal will send an invitation so no one forgets.</p>
+              </ol>
+            </div>
+            <div class="carousel-image">
+              <img class="section-image img-responsive" src="img/WonderCal-07.png" alt="Generic placeholder image">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+    </div>
+
+    <!-- Buttons
+    ================================================== -->
+
+    <div class="container">
+      <form class="form-inline" role="form">
+          <div class="form-group">
+            <div class="col-lg-5">
+              <input type="email" class="form-control input-lg" id="inputEmail" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-2">
+              <button type="submit" class="btn btn-lg btn-primary">SIGN UP FOR THE BETA</button>
+            </div>
+          </div>
+        </form>
+      <div class="spacer50"></div>
+    </div>
+
+    <!-- Footer
+    ================================================== -->
+    <footer>
+      <p>&copy; 2014 WonderCal</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+  </body>
+</html>

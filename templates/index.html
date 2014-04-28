@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>WonderCal: Easy Group Scheduling</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles -->
+    <link href="{{ url_for('static', filename='css/carousel.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand brand" href="index.html">WonderCal</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Demo</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marketing messaging and sections
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing main-content">
+
+      <!-- START THE SECTIONS -->
+
+      <!-- First Section (Intro) -->
+      <div class="row section" style="background-color:#75caeb;">
+        <div class="col-md-5" style="text-align:center;">
+          <h2 class="section-heading"><span class="brand">WonderCal:</span><br><span class="text-muted">One, Two, Scheduled!</span></h2>
+
+          <br>
+
+          <form class="form-inline" role="form">
+          <div class="form-group">
+            <div class="col-lg-5">
+              <input type="email" class="form-control input-lg" id="inputEmail" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-2">
+              <button type="submit" class="btn btn-lg btn-primary">SIGN UP FOR THE BETA</button>
+            </div>
+          </div>
+        </form>
+
+        </div>
+        <div class="col-md-7">
+          <img class="section-image img-responsive" src="{{ url_for('static', filename='img/WonderCal-08.png') }}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <!-- Second Section -->
+      <div class="row section" style="background-color:#ffffff;">
+
+        <div class="col-md-7">
+          <img class="section-image img-responsive" src="{{ url_for('static', filename='img/WonderCal-05.png') }}" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-5">
+          <h2 class="section-heading">Why do you need WonderCal?</h2>
+          <p class="lead">Trying to schedule a group meeting can feel like herding cats!  You’d think everyone having a smartphone and calendar with them all the time would help, but these calendars don’t talk to each other! The result: <em>zillions of emails/texts or tedious, manual tools.</em></p>
+        </div>
+      </div>
+
+      <!-- Third Section -->
+      <div class="row section" style="background-color:#efefef;">
+        <div class="col-md-5">
+          <h2 class="section-heading">What does it do?</h2>
+          <p class="lead">Wondercal eliminates this painful back and forth, by learning when everyone is busy and scheduling around these times! With WonderCal, you know if people are free <em>before</em> you try and schedule the meeting.</p>
+        </div>
+        <div class="col-md-7">
+          <img class="section-image img-responsive" src="{{ url_for('static', filename='img/WonderCal-06.png') }}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <!-- Fourth Section -->
+      <div class="row section" style="background-color:#ffffff">
+        <div class="col-md-7">
+          <img class="section-image img-responsive" src="{{ url_for('static', filename='img/WonderCal-07.png') }}" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-5">
+          <h2 class="section-heading">How does it work?</h2>
+          <p class="lead">Step 1 - Tell WonderCal when and with whom  you want to meet. If they’ve never used WonderCal before, we’ll ask them to link their calendars.</p>
+          <p class="lead">Step 2 - WonderCal will use what it knows about the participants’ availability to pick the best times to meet.</p>
+          <p class="lead">Step 3 - Pick the time you like from these options, and WonderCal will send an invitation so no one forgets.</p>
+        </div>
+      </div>
+
+
+      <!-- Button Section -->
+      <div class="row section" style="background-color:#75caeb;">
+
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <div class="col-lg-5">
+              <input type="email" class="form-control input-lg" id="inputEmail" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-2">
+              <button type="submit" class="btn btn-lg btn-primary">SIGN UP FOR THE BETA</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+      <!-- /END THE SECTIONS -->
+
+    </div><!-- /.container -->
+
+    <!-- Footer
+    ================================================== -->
+    <footer>
+      <p>&copy; 2014 WonderCal</p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/docs.min.js') }}"></script>
+  </body>
+</html>
