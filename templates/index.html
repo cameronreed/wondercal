@@ -7,7 +7,7 @@
 {% if request.path == "/" %}
 <!-- Google Analytics Content Experiment code -->
 <script>function utmx_section(){}function utmx(){}(function(){var
-k='85355649-1',d=document,l=d.location,c=d.cookie;
+k='85355649-2',d=document,l=d.location,c=d.cookie;
 if(l.search.indexOf('utm_expid='+k)>0)return;
 function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
 indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
@@ -37,6 +37,20 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
   ga('create', 'UA-49663911-2', 'wondercal.com');
   ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-49663911-2']);
+  _gaq.push( function() { _gat._getTrackerByName()._getLinkerUrl('http://www.google.com/'); } );
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
 </script>
 
@@ -80,7 +94,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li {% if "index" == active_page %}class="active"{% endif %}><a href="/{% if "b" == version %}2{% endif %}">Home</a></li>
-                <li {% if "team" == active_page %}class="active"{% endif %}><a href="/team{% if "b" == version %}2{% endif %}">Our Team</a></li>
+                <li {% if "team" == active_page %}class="active"{% endif %}><a href="/team{% if "b" == version %}2{% endif %}">Our Team</a>a></li>
                 <li {% if "faq" == active_page %}class="active"{% endif %}><a href="/faq{% if "b" == version %}2{% endif %}">FAQ</a></li>
               </ul>
               <p class="navbar-text navbar-right"><a href="#" class="navbar-link">Login</a></p>
@@ -115,7 +129,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
           </div>
           <div class="form-group">
             <div class="col-lg-2">
-              <button type="submit" name="submit" value="Submit" class="btn btn-lg btn-primary" onClick="window.location.href = '/thanks';">SIGN UP FOR THE BETA</button>
+              <button type="submit" name="submit" value="Submit" class="btn btn-lg btn-primary" onClick="_gaq.push(['_trackEvent', 'Email_Form', 'Submit']); window.location.href = '/thanks';">SIGN UP FOR THE BETA</button>
             </div>
           </div>
         </form>
@@ -172,7 +186,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
           </div>
           <div class="form-group">
             <div class="col-lg-2">
-              <button type="submit" name="submit" value="Submit" class="btn btn-lg btn-primary" onClick="window.location.href = '/thanks';">SIGN UP FOR THE BETA</button>
+              <button type="submit" name="submit" value="Submit" class="btn btn-lg btn-primary" onClick="_gaq.push(['_trackEvent', 'Email_Form', 'Submit']); window.location.href = '/thanks';">SIGN UP FOR THE BETA</button>
             </div>
           </div>
         </form>
