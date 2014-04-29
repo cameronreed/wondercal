@@ -52,7 +52,7 @@ def beta_page():
 
 @app.route('/thanks')
 def email_confirm_page():
-    return render_template('email-confirm.html')
+    return render_template('beta.html')
 
 
 if __name__ == '__main__':

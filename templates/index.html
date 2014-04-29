@@ -6,7 +6,8 @@
   <head>
 
 <!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
+
+<!-- <script>function utmx_section(){}function utmx(){}(function(){var
 k='85355649-0',d=document,l=d.location,c=d.cookie;
 if(l.search.indexOf('utm_expid='+k)>0)return;
 function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
@@ -17,7 +18,8 @@ length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
 '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
 valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
+</script><script>utmx('url','A/B');</script> -->
+
 <!-- End of Google Analytics Content Experiment code -->
 
     <meta charset="utf-8">
@@ -93,7 +95,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
     {% block content %}
+
     <div class="container main-content">
+    <iframe name="submitter" src="" style="visibility:hidden; display:none;"></iframe>
 
       <!-- START THE SECTIONS -->
 
@@ -103,15 +107,16 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
           <h1 class="section-heading"><span class="brand">WonderCal</span><br><span class="text-muted">One, Two, Scheduled!</span></h1>
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-          <form class="form-inline" role="form">
+
+          <form class="form-inline" role="form" action="https://docs.google.com/forms/d/1jipOWP0CDARrRcIdVQB_0k9O_CuPSWIIggxIjE_o96M/formResponse" method="POST" id="ss-form" target="submitter" onsubmit="">
           <div class="form-group">
             <div class="col-lg-5">
-              <input type="email" class="form-control input-lg" id="inputEmail" placeholder="Enter email">
+              <input type="email" class="form-control input-lg" placeholder="Enter email" name="entry.548568861" value="" id="entry_548568861" dir="auto">
             </div>
           </div>
           <div class="form-group">
             <div class="col-lg-2">
-              <button type="submit" class="btn btn-lg btn-primary">SIGN UP FOR BETA</button>
+              <button type="submit" name="submit" value="Submit" class="btn btn-lg btn-primary" onClick="window.location.href = '/thanks';">SIGN UP FOR THE BETA</button>
             </div>
           </div>
         </form>
@@ -160,22 +165,18 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 
       <!-- Button Section -->
-      <div class="row section" style="background-color:#75caeb;">
-
-        <form class="form-inline" role="form">
+          <form class="form-inline" role="form" action="https://docs.google.com/forms/d/1jipOWP0CDARrRcIdVQB_0k9O_CuPSWIIggxIjE_o96M/formResponse" method="POST" id="ss-form" target="submitter" onsubmit="">
           <div class="form-group">
             <div class="col-lg-5">
-              <input type="email" class="form-control input-lg" id="inputEmail" placeholder="Enter email">
+              <input type="email" class="form-control input-lg" placeholder="Enter email" name="entry.548568861" value="" id="entry_548568861" dir="auto">
             </div>
           </div>
           <div class="form-group">
             <div class="col-lg-2">
-              <button type="submit" class="btn btn-lg btn-primary">SIGN UP FOR BETA</button>
+              <button type="submit" name="submit" value="Submit" class="btn btn-lg btn-primary" onClick="window.location.href = '/thanks';">SIGN UP FOR THE BETA</button>
             </div>
           </div>
         </form>
-
-      </div>
 
       <!-- /END THE SECTIONS -->
       {% endblock %}

@@ -7,6 +7,7 @@
     <!-- Carousel
     ================================================== -->
     {% block content %}
+    <iframe name="submitter" src="" style="visibility:hidden; display:none;"></iframe>
     <div id="myCarousel" class="carousel slide main-content" data-ride="carousel" data-interval="false">
 
       <!-- Indicators -->
@@ -87,19 +88,16 @@
 
     <!-- Buttons
     ================================================== -->
-
-    <div class="container">
-      <form class="form-inline" role="form">
+          <form class="form-inline" role="form" action="https://docs.google.com/forms/d/1jipOWP0CDARrRcIdVQB_0k9O_CuPSWIIggxIjE_o96M/formResponse" method="POST" id="ss-form" target="submitter" onsubmit="">
           <div class="form-group">
             <div class="col-lg-5">
-              <input type="email" class="form-control input-lg" id="inputEmail" placeholder="Enter email">
+              <input type="email" class="form-control input-lg" placeholder="Enter email" name="entry.548568861" value="" id="entry_548568861" dir="auto">
             </div>
           </div>
           <div class="form-group">
             <div class="col-lg-2">
-              <button type="submit" class="btn btn-lg btn-primary">SIGN UP FOR BETA</button>
+              <button type="submit" name="submit" value="Submit" class="btn btn-lg btn-primary" onClick="window.location.href = '/thanks';">SIGN UP FOR THE BETA</button>
             </div>
           </div>
-      </form>
-    </div>
+        </form>
     {% endblock %}
