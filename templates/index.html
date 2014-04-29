@@ -1,4 +1,4 @@
-{% set version = "a" %}
+{% set version = version|default('a') -%}
 {% set active_page = active_page|default('index') -%}
 
 <!DOCTYPE html>
