@@ -35,7 +35,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  /*height: 60px;*/
   text-align: center;
   background-color: #f8f8f8;
   border-top: 4px solid #e7e7e7;
@@ -44,6 +44,22 @@ footer {
 footer p {
   margin: 15px 0;
   color: #999;
+}
+
+footer .block-left {
+  float: left;
+  display: inline;
+  width: 40%;
+  text-align: left;
+  padding: 0 20px;
+}
+
+footer .block-right {
+  float: right;
+  display: inline;
+  width: 60%;
+  text-align: left;
+  padding: 0 20px;
 }
 
 
@@ -126,6 +142,19 @@ footer p {
 .lead {
   font-size: 15pt;
 }
+
+
+/* IMAGE STYLEs
+-------------------------------------------------- */
+
+.avatar {
+  width: 125px;
+  height: 125px;
+  margin-top: 25px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+
 
 /* CUSTOMIZE THE FORM FOR BETA SIGN UP
 -------------------------------------------------- */
