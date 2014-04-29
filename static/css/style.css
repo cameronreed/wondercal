@@ -127,6 +127,19 @@ footer p {
   font-size: 15pt;
 }
 
+
+/* IMAGE STYLEs
+-------------------------------------------------- */
+
+.avatar {
+  width: 125px;
+  height: 125px;
+  margin-top: 25px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+
+
 /* CUSTOMIZE THE FORM FOR BETA SIGN UP
 -------------------------------------------------- */
 .form-group {

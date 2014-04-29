@@ -24,7 +24,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="WonderCal makes it easy to coordinate a group of people to schedule an event. It uses calendar integration to show the time slots that are available for the whole team.">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
     <title>{% block title %}WonderCal: Easy Group Scheduling{% endblock %}</title>
@@ -144,7 +144,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
       <div class="row section" style="background-color:#ffffff;">
 
         <div class="col-md-7">
-          <img class="section-image img-responsive" src="{{ url_for('static', filename='img/WonderCal-09.png') }}" alt="coordinating group meeting">
+          <img class="section-image img-responsive" src="{{ url_for('static', filename='img/WonderCal-13.png') }}" alt="coordinating group meeting">
         </div>
         <div class="col-md-5">
           <h2 class="section-heading">Why do you need WonderCal?</h2>
@@ -159,7 +159,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
           <p class="lead">Wondercal eliminates this painful back and forth, by learning when everyone is busy and scheduling around these times! With WonderCal, you know if people are free <em>before</em> you try and schedule the meeting.</p>
         </div>
         <div class="col-md-7">
-          <img class="section-image img-responsive" src="{{ url_for('static', filename='img/WonderCal-10.png') }}" alt="group connects to wondercal">
+          <img class="section-image img-responsive" src="{{ url_for('static', filename='img/WonderCal-14.png') }}" alt="group connects to wondercal">
         </div>
       </div>
 
@@ -178,6 +178,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 
       <!-- Button Section -->
+      <div class="row section" style="background-color:#75caeb">
           <form class="form-inline" role="form" action="https://docs.google.com/forms/d/1jipOWP0CDARrRcIdVQB_0k9O_CuPSWIIggxIjE_o96M/formResponse" method="POST" id="ss-form" target="submitter" onsubmit="">
           <div class="form-group">
             <div class="col-lg-5">
@@ -190,6 +191,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
             </div>
           </div>
         </form>
+      </div>
 
       <!-- /END THE SECTIONS -->
       {% endblock %}
