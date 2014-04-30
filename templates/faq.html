@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 
 {% set active_page = "faq" %}
-{% set version = "a" %}
+{% set version = version|default('a') %}
 {% block title %}WonderCal: FAQ{% endblock %}
 
     <!-- FAQ Content
@@ -11,6 +11,38 @@
       <div class="row section">
         <h2>Frequently Asked Questions</h2>
         <hr>
+        <ol>
+            <li>
+                <h4>Who should use WonderCal?</h4>
+                <p>If you’ve ever wished that you could make schedule group meetings WAY easier, WonderCal is for you. We’ve had people from students to freelancers to socialites tell us that they wanted a better way to schedule meetings for contacts scattered across Google Calendar, iCal, Outlook… WonderCal solves this by syncing between calendars and letting you schedule meetings in three clicks.
+</p>
+            </li>
+            <li>
+                <h4>How does WonderCal know what the best time is?</h4>
+                <p>Once you invite your contacts to a meeting, we find times that work for everyone’s calendar, making it easy for you to see when everyone can meet.</p>
+            </li>
+            <li>
+                <h4>How does WonderCal synchronize my calendars?</h4>
+                <p>After you give us permission through sign-up, we handle communicating with your calendaring service. This ensures that you always have an up-to-date view of everyone’s availability!</p>
+            </li>
+            <li>
+                <h4>Who can view my calendar?</h4>
+                <p>No one but you. Others can see when everyone in the meeting is available, but cannot view your calendar.</p>
+            </li>
+            <li>
+                <h4>Is WonderCal safe/private?</h4>
+                <p>WonderCal does not store your passwords, and uses industry best-practice protocols (OAuth) to securely connect to your calendaring services. Any data that we temporarily store to help make your experience smoother is encrypted and held on our secure servers.</p>
+            </li>
+            <li>
+                <h4>How do I use WonderCal as my primary calendar?</h4>
+                <p>Right now, we are focused on making the experience of scheduling awesome (or at least painless), but check back with us soon!</p>
+            </li>
+            <li>
+                <h4>Who are the amazing people who made WonderCal?</h4>
+                <p>See the <a href="{% if 'a' == version %}{{url_for('team_page')}}{% else %}{{url_for('ab_team_page')}}{% endif %}">team</a> section!</p>
+            </li>
+
+        </ol>
       </div>
     </div>
     {% endblock %}
